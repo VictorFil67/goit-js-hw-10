@@ -1,0 +1,43 @@
+.breed-select {
+    padding: 10px;
+    margin: 20px;
+}
+
+.cat-info {
+    width: 800px;
+    height: 600px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.is-hidden {
+    display: none;
+}
+.loader.is-hidden {
+    display: none;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #00F;
+    border-bottom-color: #FF3D00;
+    border-radius: 50%;
+    display: block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
