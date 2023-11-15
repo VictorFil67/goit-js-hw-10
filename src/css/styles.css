@@ -6,6 +6,7 @@
 .cat-info {
     width: 800px;
     height: 600px;
+    margin-left: 20px;
 }
 
 img {
@@ -20,6 +21,10 @@ img {
 }
 .loader.is-hidden {
     display: none;
+}
+
+#ss-coqmpjo8 {
+    max-width: 800px;
 }
 
 .loader {

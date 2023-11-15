@@ -17,6 +17,9 @@ error.classList.add('is-hidden');
 
 fetchBreeds().then(catBreeds => {
     renderBreeds(catBreeds);
+    new SlimSelect({
+            select: document.querySelector('.breed-select'),
+          });
     loader.classList.add('is-hidden');
     breedSelect.classList.remove('is-hidden');
 })

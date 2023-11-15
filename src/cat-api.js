@@ -1,5 +1,6 @@
 import axios from "axios";
 axios.defaults.headers.common["x-api-key"] = "live_NCITur9P2MR1Zl9oIfGn32aBYLdzZjKE4reMDRLO711Ro273A0XaOFiXkGdPdIB5";
+axios.defaults.baseURL = 'https://api.thecatapi.com';
 const breedSelect = document.querySelector('.breed-select');
 const catInfo = document.querySelector('.cat-info');
 const loader = document.querySelector('.loader');
@@ -8,7 +9,7 @@ const error = document.querySelector('.error');
 export function fetchBreeds() {
     loader.classList.remove('is-hidden');
     breedSelect.classList.add('is-hidden');
-    return  axios.get("https://api.thecatapi.com/v1/breeds")
+    return  axios.get("/v1/breeds")
     .then(response => {
         return response.data;
     })
